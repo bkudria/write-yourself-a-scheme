@@ -1,5 +1,5 @@
 module Main where
-    import System.Environment
-
-    main = do args <- getArgs
-              putStrLn ("Hello, " ++ args !! 0)
+    main :: IO ()
+    main = do putStrLn("Please type your name: ")
+              name <- getLine
+              putStrLn("Hello, " ++ name)
